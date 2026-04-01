@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials — Consultant Accounts</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .testimonial-card {
+      background: var(--off-white);
+      border-top: 3px solid var(--teal);
+      padding: 2rem;
+      border-radius: 0 0 4px 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(11,31,58,0.1);
+    }
+
+    .testimonial-card.featured {
+      background: var(--teal-pale);
+      border-top-color: var(--navy);
+      grid-column: span 2;
+    }
+
+    @media (max-width: 680px) {
+      .testimonial-card.featured { grid-column: span 1; }
+    }
+
+    .quote-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--teal);
+      opacity: 0.4;
+      margin-bottom: -1rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.925rem;
+      color: var(--text-dark);
+      line-height: 1.8;
+      flex-grow: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonial-featured .testimonial-text {
+      font-size: 1rem;
+    }
+
+    .testimonial-author {
+      border-top: 1px solid rgba(11,31,58,0.1);
+      padding-top: 1rem;
+    }
+
+    .testimonial-author strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--navy);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+    }
+
+    .testimonial-author span {
+      font-size: 0.8rem;
+      color: var(--teal);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">Consultant <span>Accounts</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="testimonials.html" class="active">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <h1>Testimonials</h1>
+    <p>What consultants say about working with Consultant Accounts.</p>
+  </div>
+
+  <section>
+    <div class="section-inner">
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card featured fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Adam was recommended to me shortly after I began doing private work and I have to say, he has been a godsend! His billing service is excellent. Invoices are sent out immediately and delayed payments chased up. His approach is both professional and friendly, he sends me updates regularly and I rarely have to get involved with any aspect of the invoicing. He has certainly made my private practice easier to run and I would highly recommend his service.</p>
+          <div class="testimonial-author">
+            <strong>Miss Vigdis Thorisdottir</strong>
+            <span>Orthopaedics</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Getting Adam to manage my billing was one of the best decisions I made when starting my private practice. He is extremely efficient but at the same time communicates very well with patients ensuring that payments are up-to-date without any complaints. He also really understands how to navigate the complexities of billing the various insurance companies. Due to his hard work I have not had any unpaid invoices. With Adam I can basically concentrate on delivering high quality care and leave all the financial dealing to him.</p>
+          <div class="testimonial-author">
+            <strong>Mr Inderraj Hanspal</strong>
+            <span>Ophthalmology</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">The support Adam provides has been absolutely invaluable for me. As a new consultant I benefited immensely from Adam's comprehensive knowledge about insurance companies and private treatment centres. He has helped me streamline the pathways for my private patients and has such a meticulous approach to billing and invoicing that I really feel I don't need to worry about this, which allows me to focus my efforts on delivering clinical care!</p>
+          <div class="testimonial-author">
+            <strong>Mr Usman Hussain</strong>
+            <span>Ophthalmology</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">I have been assisted by Adam over the last four years. Before that, I spent considerable amounts of my free time sending out invoices and keeping track of payments. Adam is extremely approachable and diligent. Through his personal approach, we have developed methods that have ensured that I can maximise my earnings and keep a record of payments, with a dramatic reduction in workload for me. I would whole-heartedly recommend him to my colleagues.</p>
+          <div class="testimonial-author">
+            <strong>Mr Craig Vickery</strong>
+            <span>Gastrointestinal &amp; General Surgeon</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Adam has been helping me to bill my private anaesthetic work for the last four years. To say that he does an amazing job would be an understatement. I can completely trust him to provide an honest service and that too for a very reasonable price.</p>
+          <div class="testimonial-author">
+            <strong>Dr Ayush Sinha</strong>
+            <span>Anaesthetics</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">In depth knowledge of the private practice system, efficient collection of fees more than covers his fast and friendly service. Signing up with Adam is a no-brainer really!</p>
+          <div class="testimonial-author">
+            <strong>Dr Jon Cardy</strong>
+            <span>Anaesthetics</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">A professional service tailored to my specific needs. Has freed me from the less pleasant tasks of private practice. Prompt accurate billing and tenacious pursuit of outstanding invoices mean that Adam's services have paid for themselves.</p>
+          <div class="testimonial-author">
+            <strong>Dr Ian Frost</strong>
+            <span>Anaesthetics</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Since Adam took over my private practice billing a significant weight of effort and aggravation has been lifted leaving me free to concentrate on the practice part. I am sure we are billing more efficiently and completely, and our non-pay rate has fallen to almost nil. Preparing accounts each year is now considerably less effort than it used to be. The saving in my time alone is well worth the cost of Adam's service.</p>
+          <div class="testimonial-author">
+            <strong>Mr Martin Wood</strong>
+            <span>Orthopaedics</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Adam's diligence and attention to detail are first rate, and the work is carried out efficiently and on time. His communication skills via phone and e-mail are careful and prompt. When rare invoicing errors have occurred Adam has had the humility and grace to apologise and correct the error. He is an excellent accounts manager.</p>
+          <div class="testimonial-author">
+            <strong>Dr Daniel Sharpstone</strong>
+            <span>Gastroenterology</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Adam has worked for me running my accounts and invoicing for private work over the last seven years. He actively identifies the appropriate codes and the most beneficial remuneration scheme in order that the highest appropriate income can be generated. Having Adam to deal with the financial side of my practice has been a great help and stress reliever. I am extremely satisfied with his services.</p>
+          <div class="testimonial-author">
+            <strong>Mr Soren Sjolin</strong>
+            <span>Orthopaedics</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Adam Schiller has provided a billing service for my ophthalmology practice for thirteen years. From the moment that Adam seamlessly took over my billing I have been able to separate patient care from reimbursement issues. Adam has been persistent and tactful. Not once has a patient been unhappy with their contact with him. My bad debt has fallen dramatically to less than 1%.</p>
+          <div class="testimonial-author">
+            <strong>Mr Andrew Ramsay</strong>
+            <span>Ophthalmology</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">From the moment Adam has started looking after my private billing, things have become very easy for me. He goes the extra step to ensure I receive my fees from insurance companies in full and on time. I cannot thank him enough. He is really very good.</p>
+          <div class="testimonial-author">
+            <strong>Dr Kaushik Bhowmick</strong>
+            <span>Anaesthetics</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">I'm very fortunate to have the kind help of Adam in running my account and bookkeeping. Adam is reliably organised and efficient. Great pleasure for me to work with Adam and I happily recommend his service.</p>
+          <div class="testimonial-author">
+            <strong>Dr Simon Whalley</strong>
+            <span>Gastroenterology</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">I have used Adam Schiller for my private practice accounts for quite some time now. Adam has provided a highly professional, reliable and efficient invoicing service that has made my busy life so much easier. Highly recommended!</p>
+          <div class="testimonial-author">
+            <strong>Mr Manzar Saeed</strong>
+            <span>Ophthalmology</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Adam has admirably managed my practice account for the past three years. He is always available for help, keeps track of the bills paid and maintains accurate accounting. Thanks Adam for your help.</p>
+          <div class="testimonial-author">
+            <strong>Mr Nitin Gupta</strong>
+            <span>Ophthalmology</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Ready to simplify your billing?</h2>
+    <p>Get in touch to find out how Consultant Accounts can support your practice.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Me Today</a>
+  </section>
+
+  <footer>
+    <div class="footer-brand"><strong>Consultant Accounts</strong> — The Billing Service for Medical Professionals</div>
+    <div class="footer-contact">
+      T: 07761 693 521 &nbsp;|&nbsp; E: <a href="mailto:adamschiller.consultants@gmail.com">adamschiller.consultants@gmail.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
